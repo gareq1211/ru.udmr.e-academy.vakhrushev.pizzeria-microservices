@@ -1,0 +1,13 @@
+rootProject.name = 'pizzeria-microservices'
+
+include 'shared'
+include 'client-service'
+include 'menu-service'
+include 'order-service'
+include 'kitchen-service'
+
+
+
+
+
+

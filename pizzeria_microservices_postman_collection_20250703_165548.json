@@ -1,0 +1,179 @@
+{
+  "info": {
+    "name": "Pizzeria Microservices API",
+    "_postman_id": "pizzeria-collection-id",
+    "description": "Коллекция запросов для тестирования микросервисов Пиццерии",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Client Service",
+      "item": [
+        {
+          "name": "Создать клиента",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"\\u0418\\u0432\\u0430\\u043d \\u0418\\u0432\\u0430\\u043d\\u043e\\u0432\", \"phone\": \"89991234567\"}"
+            },
+            "url": {
+              "raw": "http://localhost:8082/clients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "clients"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получить всех клиентов",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8082/clients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "clients"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Menu Service",
+      "item": [
+        {
+          "name": "Добавить пиццу",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"\\u041c\\u0430\\u0440\\u0433\\u0430\\u0440\\u0438\\u0442\\u0430\", \"price\": 450}"
+            },
+            "url": {
+              "raw": "http://localhost:8081/menu",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "menu"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получить меню",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8081/menu",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "menu"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Order Service",
+      "item": [
+        {
+          "name": "Создать заказ",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"clientId\": 1, \"pizzaId\": 1, \"status\": \"NEW\"}"
+            },
+            "url": {
+              "raw": "http://localhost:8084/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8084",
+              "path": [
+                "orders"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Получить все заказы",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8084/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8084",
+              "path": [
+                "orders"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kitchen Service",
+      "item": [
+        {
+          "name": "Получить задачи кухни",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8083/kitchen-tasks",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "kitchen-tasks"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.pizzeria'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.postgresql:postgresql'
+    implementation project(':shared')
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'com.h2database:h2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations'
+}
+
+test {
+    useJUnitPlatform()
+    jvmArgs '-Dfile.encoding=UTF-8'
+}
+bootJar {
+    mainClass = 'com.pizzeria.client.ClientServiceApplication'
+    archiveFileName = 'client-service.jar'
+}

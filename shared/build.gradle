@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+group = 'com.pizzeria'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+  }
+
+test {
+    useJUnitPlatform()
+}
