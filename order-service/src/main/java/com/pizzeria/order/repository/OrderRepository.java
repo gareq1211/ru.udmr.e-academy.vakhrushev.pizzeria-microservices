@@ -1,4 +1,4 @@
-package com.pizzeria.order;
+package com.pizzeria.order.repository;
 
 import com.pizzeria.shared.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;

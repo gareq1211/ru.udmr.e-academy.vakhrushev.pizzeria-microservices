@@ -1,6 +1,8 @@
 package com.pizzeria.order;
 
 import com.pizzeria.order.dto.OrderStatusUpdateRequest;
+import com.pizzeria.order.repository.OrderRepository;
+import com.pizzeria.order.rest.OrderController;
 import com.pizzeria.order.service.OrderService;
 import com.pizzeria.shared.dto.OrderDto;
 import com.pizzeria.shared.entity.Order;

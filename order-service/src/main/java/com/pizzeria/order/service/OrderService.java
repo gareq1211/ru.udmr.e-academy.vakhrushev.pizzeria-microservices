@@ -1,6 +1,6 @@
 package com.pizzeria.order.service;
 
-import com.pizzeria.order.OrderRepository;
+import com.pizzeria.order.repository.OrderRepository;
 import com.pizzeria.order.client.ExternalServiceClient;
 import com.pizzeria.order.mapper.OrderMapper;
 import com.pizzeria.shared.dto.ClientDto;
