@@ -2,6 +2,7 @@ package com.pizzeria.client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pizzeria.client.exception.GlobalExceptionHandler;
+import com.pizzeria.client.repositirory.ClientRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

@@ -1,0 +1,17 @@
+1.pizzeria microservice
+
+(client-service)
+POST http://localhost:8082/api/clients
+body row
+{
+  "name": "Виктор",
+  "phone": "+79998885555"
+}
+
+(menu-service)
+POST http://localhost:8081/menu
+body row
+{
+"name": "пицца с ананасами",
+ "price": 900
+}
