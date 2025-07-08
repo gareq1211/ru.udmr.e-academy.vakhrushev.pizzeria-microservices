@@ -1,5 +1,6 @@
 package com.pizzeria.order.rest;
 
+import com.pizzeria.order.dto.OrderRequest;
 import com.pizzeria.order.repository.OrderRepository;
 import com.pizzeria.order.dto.OrderStatusUpdateRequest;
 import com.pizzeria.order.service.OrderService;
@@ -27,9 +28,13 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public OrderDto create(@RequestBody Order order) {
+    public OrderDto create(@RequestBody OrderRequest order) {
        requestLogger.log(order);
-       return orderService.create(order);
+        Order newOrder = new Order();
+        newOrder.setClientId(order.getClientId());
+        newOrder.setPizzaId(order.getPizzaId()); // Теперь это список
+        newOrder.setStatus("NEW");
+        return orderService.create(newOrder);
     }
 
     @PutMapping("/{id}/status")

@@ -15,3 +15,11 @@ body row
 "name": "пицца с ананасами",
  "price": 900
 }
+(order-service)
+POST http://localhost:8084/orders
+body row
+{
+   "clientId": 6,
+   "pizzaId": [41,40,6,4],
+
+}

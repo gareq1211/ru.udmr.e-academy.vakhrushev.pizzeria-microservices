@@ -9,6 +9,9 @@ import com.pizzeria.shared.dto.PizzaDto;
 import com.pizzeria.shared.exception.NotFoundException;
 import com.pizzeria.shared.exception.BadRequestException;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class ExternalServiceClient {
 
@@ -36,15 +39,21 @@ public class ExternalServiceClient {
 
 
 
-    public PizzaDto getPizza(Long pizzaId) {
+    public List<PizzaDto> getPizza(List<Long> pizzaIds) {
         try {
+            // Преобразуем список ID в строку вида "1,2,3"
+            String ids = pizzaIds.stream()
+                    .map(String::valueOf)
+                    .collect(Collectors.joining(","));
+
+            // Выполняем GET /menu?id=1,2,3
             return webClientBuilder.build()
                     .get()
-                    .uri("http://localhost:8081/menu/" + pizzaId)
+                    .uri("http://localhost:8081/menu?id=" + ids)
                     .retrieve()
-                    .bodyToMono(PizzaDto.class)
-                    .blockOptional()
-                    .orElseThrow(() -> new NotFoundException("Пицца с ID " + pizzaId + " не найдена"));
+                    .bodyToFlux(PizzaDto.class)
+                    .collectList()
+                    .block();
         } catch (Exception e) {
             throw new BadRequestException("Ошибка при получении пиццы: " + e.getMessage());
         }
