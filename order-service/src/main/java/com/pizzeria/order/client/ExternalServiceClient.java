@@ -66,7 +66,7 @@ public class ExternalServiceClient {
 
             webClientBuilder.build()
                     .post()
-                    .uri("http://localhost:8084/kitchen-tasks")
+                    .uri("http://localhost:8083/kitchen-tasks")
                     .bodyValue(task)
                     .retrieve()
                     .toBodilessEntity()
