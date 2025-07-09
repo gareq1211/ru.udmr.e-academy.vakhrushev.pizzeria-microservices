@@ -28,13 +28,10 @@ public class OrderService {
     }
 
     public OrderDto create(Order order) {
-        List<PizzaDto> pizzas = externalServiceClient.getPizza(
-                order.getPizzaId()
-        );
-
+        List<PizzaDto> pizzas = externalServiceClient.getPizza(order.getPizzaId());
         ClientDto client = externalServiceClient.getClient(order.getClientId());
         Order saved = repository.save(order);
-        externalServiceClient.createKitchenTask("Приготовить заказ №" + saved.getId());
+        externalServiceClient.createKitchenTask("Приготовить заказ №" + saved.getId(), saved.getId());
         return mapper.toDto(saved, pizzas, client);
     }
 

@@ -59,11 +59,12 @@ public class ExternalServiceClient {
         }
     }
 
-    public void createKitchenTask(String taskDescription) {
+    public void createKitchenTask(String taskDescription, Long orderId) {
         try {
             KitchenTask task = new KitchenTask();
             task.setDescription(taskDescription);
-
+            task.setOrderId(orderId); // <-- добавили orderId
+            task.setStatus("WAITING");
             webClientBuilder.build()
                     .post()
                     .uri("http://localhost:8083/kitchen-tasks")
