@@ -21,6 +21,7 @@ public class OrderController {
     private final OrderService orderService;
     private final OrderRepository repository;
     private final RequestLogger requestLogger;
+
     @GetMapping
     public List<OrderDto> getAll() {
         return orderService.getAll();
@@ -29,10 +30,10 @@ public class OrderController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public OrderDto create(@RequestBody OrderRequest order) {
-       requestLogger.log(order);
+        requestLogger.log(order);
         Order newOrder = new Order();
         newOrder.setClientId(order.getClientId());
-        newOrder.setPizzaId(order.getPizzaId()); // Теперь это список
+        newOrder.setPizzaId(order.getPizzaId());
         newOrder.setStatus("NEW");
         return orderService.create(newOrder);
     }
@@ -41,6 +42,7 @@ public class OrderController {
     public OrderDto updateStatus(@PathVariable Long id, @RequestBody OrderStatusUpdateRequest request) {
         return orderService.updateStatus(id, request.getStatus());
     }
+
     @GetMapping("/{id}")
     public OrderDto getById(@PathVariable Long id) {
         Order order = repository.findById(id)

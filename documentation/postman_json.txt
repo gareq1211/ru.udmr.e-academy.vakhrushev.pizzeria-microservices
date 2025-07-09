@@ -1,15 +1,15 @@
 1.pizzeria microservice
 
 (client-service)
-POST http://localhost:8082/api/clients
+POST http://localhost:8082/clients
 body row
 {
-  "name": "Виктор",
-  "phone": "+79998885555"
+  "name": "Семен",
+  "phone": "+7666666666"
 }
 
 (menu-service)
-POST http://localhost:8081/menu
+GET http://localhost:8081/menu
 body row
 {
 "name": "пицца с ананасами",
@@ -20,6 +20,8 @@ body row
 POST http://localhost:8084/orders
 body row
 {
-   "clientId": 6,
-   "pizzaId": [41,40,6,4],
+   "clientId": 3,
+   "pizzaId": [37,3,6,5,40,42]
 }
+(kitchen-service)
+GET http://localhost:8083/kitchen-tasks

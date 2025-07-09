@@ -1,0 +1,107 @@
+1. Запустить БД в контейнере:
+        docker run --name my-pg -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+2. Собираем проект, игнорируя тесты:
+        ./gradlew clean build -x test
+3. docker-compose up --build
+4. Ошибка - занят порт. Проверяем кто этот порт использует командой:
+        netstat -ano | findstr :8081
+
+   ответ:
+        TCP    0.0.0.0:8081           0.0.0.0:0              LISTENING       5124
+          TCP    [::]:8081              [::]:0                 LISTENING       5124
+
+5. Смотрим кто конкретно использует, 5124, команда:
+        tasklist | findstr 5124
+   Ответ:
+        Tomcat9.exe                   5124 Services                   0    28?196 ??
+6. Меняем порты 8081 на 8085:
+        1) В файле docker-compose.yml
+        2) Внутри menu-service Файл: menu-service/src/main/resources/application.yml
+        3) В order-service в application.properties + application.yml.
+7. Измените порт PostgreSQL в docker-compose.yml
+     ports:
+        - "5435:5432"   # <-- было "5432:5432"
+8. В каждом микросервисе (menu-service, client-service, kitchen-service, order-service) откройте файл application.yml
+или application.properties и измените URL подключения к БД (меняем порт на 5435).
+9. Изменить в каждом микросервисе localhost на postgres:
+        spring.datasource.url=jdbc:postgresql://postgres:5432/postgres
+10. Контейнеры запущены и работают без ошибок. Далее подключаем базу данных:
+        Шаг 2: Заполнить параметры подключения
+        В открывшемся окне Register - Server заполните следующие поля:
+
+        Name : Укажите произвольное имя для сервера (например, Docker PostgreSQL).
+        Host : Укажите localhost, так как порт PostgreSQL уже проброшен на хостовую машину.
+        Port : Укажите порт, который вы опубликовали в докер-композе (5435).
+        Maintenance database : Укажите базу данных, к которой вы хотите подключиться (по умолчанию postgres).
+        Username : Укажите имя пользователя PostgreSQL (postgres).
+        Password : Укажите пароль PostgreSQL (postgres).
+        Пример заполнения:
+        Name : Docker PostgreSQL
+        Host : localhost
+        Port : 5435
+        Maintenance database : postgres
+        Username : postgres
+        Password : postgres
+11. CREATE SCHEMA client_schema;
+    CREATE SCHEMA order_schema;
+    CREATE SCHEMA kitchen_schema;
+    CREATE SCHEMA menu_schema;
+
+    CREATE TABLE client_schema.clients (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        phone VARCHAR(20) NOT NULL
+    );
+
+    CREATE TABLE order_schema.orders (
+        id SERIAL PRIMARY KEY,
+        client_id INTEGER REFERENCES client_schema.clients(id),
+        pizza_id INTEGER NOT NULL,
+        status VARCHAR(50) NOT NULL
+    );
+
+    CREATE TABLE kitchen_schema.kitchen_tasks (
+        id SERIAL PRIMARY KEY,
+        order_id INTEGER REFERENCES order_schema.orders(id),
+        status VARCHAR(50) NOT NULL,
+        description TEXT
+    );
+
+    CREATE TABLE menu_schema.menu (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        price DECIMAL(10, 2) NOT NULL,
+        description TEXT
+    );
+
+    INSERT INTO client_schema.clients (name, phone)
+    VALUES
+        ('Иван Иванов', '+79991234567'),
+        ('Петр Петров', '+79998887766'),
+        ('Сергей Сергеев', '+79998888555'),
+        ('Анна Ананьева', '+79998888966');
+
+    INSERT INTO menu_schema.menu (name, price, description)
+    VALUES
+        ('Пепперони', 500.00, 'Пицца с перцами и колбасой'),
+        ('Маргарита', 450.00, 'Классическая пицца с томатами и моцареллой'),
+        ('Гавайская', 550.00, 'Пицца с ананасами и курицей'),
+        ('Четыре сыра', 600.00, 'Пицца с четырьмя видами сыра');
+
+    INSERT INTO order_schema.orders (client_id, pizza_id, status)
+    VALUES
+        (1, 1, 'IN_PROGRESS'), -- Иван Иванов заказал Пепперони
+        (2, 2, 'WAITING'),      -- Петр Петров заказал Маргариту
+        (3, 3, 'READY'),        -- Сергей Сергеев заказал Гавайскую
+        (4, 4, 'CANCELLED');    -- Анна Ананьева заказала Четыре сыра, но отменила
+
+    INSERT INTO kitchen_schema.kitchen_tasks (order_id, status, description)
+    VALUES
+        (1, 'IN_PROGRESS', 'Подготовка ингредиентов для Пепперони'),
+        (1, 'READY', 'Пепперони готова'),
+        (2, 'WAITING', 'Ожидание начала приготовления Маргариты'),
+        (3, 'READY', 'Гавайская готова'),
+        (4, 'CANCELLED', 'Заказ отменен, не требуется приготовление');
+
+12.
+

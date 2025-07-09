@@ -187,3 +187,261 @@
 2025-07-09 11:03:18,719 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-07-09 11:03:18,720 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-07-09 11:03:18,723 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 11:28:35,016 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 11:28:35,052 [main] INFO  c.p.client.ClientServiceApplication - Starting ClientServiceApplication using Java 23.0.1 with PID 13800 (C:\Users\user\IdeaProjects\pizzeria-microservices\client-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 11:28:35,053 [main] INFO  c.p.client.ClientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 11:28:35,683 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 11:28:35,872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 1 JPA repository interface.
+2025-07-09 11:28:36,675 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-07-09 11:28:36,683 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-07-09 11:28:36,685 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 11:28:36,685 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 11:28:36,739 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 11:28:36,739 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1620 ms
+2025-07-09 11:28:36,884 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 11:28:36,959 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 11:28:37,014 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 11:28:37,280 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 11:28:37,312 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 11:28:37,505 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@640a8f93
+2025-07-09 11:28:37,507 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 11:28:37,551 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 11:28:38,768 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 11:28:38,971 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 11:28:39,511 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 11:28:39,855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-07-09 11:28:39,877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2025-07-09 11:28:39,882 [main] INFO  c.p.client.ClientServiceApplication - Started ClientServiceApplication in 5.232 seconds (process running for 6.111)
+2025-07-09 11:28:40,564 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 11:28:40,594 [main] INFO  c.p.order.OrderServiceApplication - Starting OrderServiceApplication using Java 23.0.1 with PID 14744 (C:\Users\user\IdeaProjects\pizzeria-microservices\order-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 11:28:40,594 [main] INFO  c.p.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 11:28:41,119 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 11:28:41,237 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2025-07-09 11:28:41,764 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2025-07-09 11:28:41,773 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-07-09 11:28:41,775 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 11:28:41,775 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 11:28:41,828 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 11:28:41,828 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1182 ms
+2025-07-09 11:28:41,937 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 11:28:41,979 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 11:28:42,009 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 11:28:42,198 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 11:28:42,219 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 11:28:42,346 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cc8adff
+2025-07-09 11:28:42,347 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 11:28:42,375 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 11:28:43,031 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 11:28:43,098 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 11:28:43,340 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 11:28:43,554 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-07-09 11:28:43,567 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path ''
+2025-07-09 11:28:43,572 [main] INFO  c.p.order.OrderServiceApplication - Started OrderServiceApplication in 3.315 seconds (process running for 4.014)
+2025-07-09 11:28:53,106 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 11:28:53,106 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 11:28:53,107 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-09 11:28:53,206 [http-nio-8084-exec-1] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":1,"pizzaId":[10,20,30]}
+2025-07-09 11:28:53,974 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 11:28:53,974 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 11:28:53,975 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-09 13:53:10,502 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 13:53:10,505 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 13:53:10,507 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 13:53:12,736 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 13:53:12,753 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 13:53:12,758 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 14:02:37,633 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 14:02:37,670 [main] INFO  c.p.client.ClientServiceApplication - Starting ClientServiceApplication using Java 23.0.1 with PID 14384 (C:\Users\user\IdeaProjects\pizzeria-microservices\client-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 14:02:37,671 [main] INFO  c.p.client.ClientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 14:02:38,186 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 14:02:38,244 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 14:02:38,281 [main] INFO  c.p.order.OrderServiceApplication - Starting OrderServiceApplication using Java 23.0.1 with PID 13724 (C:\Users\user\IdeaProjects\pizzeria-microservices\order-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 14:02:38,282 [main] INFO  c.p.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 14:02:38,300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2025-07-09 14:02:38,856 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 14:02:38,857 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-07-09 14:02:38,863 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-07-09 14:02:38,864 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 14:02:38,864 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 14:02:38,910 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 14:02:38,911 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1181 ms
+2025-07-09 14:02:38,974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2025-07-09 14:02:39,030 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 14:02:39,082 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 14:02:39,111 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 14:02:39,317 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 14:02:39,337 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 14:02:39,468 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@708dfe10
+2025-07-09 14:02:39,470 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 14:02:39,498 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 14:02:39,500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2025-07-09 14:02:39,507 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-07-09 14:02:39,509 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 14:02:39,510 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 14:02:39,564 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 14:02:39,564 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1222 ms
+2025-07-09 14:02:39,706 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 14:02:39,769 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 14:02:39,808 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 14:02:40,054 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 14:02:40,082 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 14:02:40,231 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d90644f
+2025-07-09 14:02:40,232 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 14:02:40,261 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 14:02:40,377 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 14:02:40,482 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:02:40,807 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 14:02:41,065 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-07-09 14:02:41,067 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 14:02:41,079 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2025-07-09 14:02:41,083 [main] INFO  c.p.client.ClientServiceApplication - Started ClientServiceApplication in 3.758 seconds (process running for 6.967)
+2025-07-09 14:02:41,136 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:02:41,362 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 14:02:41,573 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-07-09 14:02:41,586 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path ''
+2025-07-09 14:02:41,590 [main] INFO  c.p.order.OrderServiceApplication - Started OrderServiceApplication in 3.678 seconds (process running for 4.555)
+2025-07-09 14:02:55,169 [http-nio-8082-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 14:02:55,170 [http-nio-8082-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 14:02:55,170 [http-nio-8082-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-09 14:03:02,541 [http-nio-8082-exec-4] INFO  c.p.client.rest.ClientController - REQUEST: {"id":null,"name":"Семен","phone":"+75555555555"}
+2025-07-09 14:03:02,661 [http-nio-8082-exec-4] INFO  c.p.client.rest.ClientController - RESPONSE: {"id":9,"name":"Семен","phone":"+75555555555"}
+2025-07-09 14:16:36,739 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:16:36,741 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 14:16:36,743 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 14:16:36,830 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:16:36,832 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 14:16:36,834 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 14:16:41,773 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 14:16:41,811 [main] INFO  c.p.client.ClientServiceApplication - Starting ClientServiceApplication using Java 23.0.1 with PID 14004 (C:\Users\user\IdeaProjects\pizzeria-microservices\client-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 14:16:41,812 [main] INFO  c.p.client.ClientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 14:16:42,270 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 14:16:42,322 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-07-09 14:16:43,158 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-07-09 14:16:43,170 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-07-09 14:16:43,172 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 14:16:43,173 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 14:16:43,250 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 14:16:43,251 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1386 ms
+2025-07-09 14:16:43,438 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 14:16:43,526 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 14:16:43,605 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 14:16:43,942 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 14:16:43,978 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 14:16:44,152 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c6379c
+2025-07-09 14:16:44,154 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 14:16:44,202 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 14:16:45,195 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 14:16:45,256 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 14:16:45,285 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:16:45,287 [main] INFO  c.p.order.OrderServiceApplication - Starting OrderServiceApplication using Java 23.0.1 with PID 8464 (C:\Users\user\IdeaProjects\pizzeria-microservices\order-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 14:16:45,288 [main] INFO  c.p.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 14:16:45,683 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 14:16:45,771 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 14:16:45,884 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2025-07-09 14:16:45,960 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-07-09 14:16:45,979 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2025-07-09 14:16:45,986 [main] INFO  c.p.client.ClientServiceApplication - Started ClientServiceApplication in 4.591 seconds (process running for 5.365)
+2025-07-09 14:16:46,451 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2025-07-09 14:16:46,457 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-07-09 14:16:46,460 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 14:16:46,460 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 14:16:46,505 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 14:16:46,505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1159 ms
+2025-07-09 14:16:46,630 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 14:16:46,674 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 14:16:46,705 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 14:16:46,884 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 14:16:46,910 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 14:16:47,041 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59f3426f
+2025-07-09 14:16:47,042 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 14:16:47,073 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 14:16:47,767 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 14:16:47,832 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:16:48,087 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 14:16:48,304 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-07-09 14:16:48,316 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path ''
+2025-07-09 14:16:48,320 [main] INFO  c.p.order.OrderServiceApplication - Started OrderServiceApplication in 3.36 seconds (process running for 4.106)
+2025-07-09 14:18:23,670 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 14:18:23,670 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 14:18:23,671 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-09 14:18:23,786 [http-nio-8082-exec-2] INFO  c.p.client.rest.ClientController - REQUEST: {"id":null,"name":"Семен","phone":"+75555555555"}
+2025-07-09 14:18:23,915 [http-nio-8082-exec-2] INFO  c.p.client.rest.ClientController - RESPONSE: {"id":10,"name":"Семен","phone":"+75555555555"}
+2025-07-09 14:27:22,467 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 14:27:22,467 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 14:27:22,468 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-09 14:38:23,537 [http-nio-8084-exec-10] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":3,"pizzaId":[3,6,5]}
+2025-07-09 14:47:06,659 [http-nio-8084-exec-1] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":3,"pizzaId":[3]}
+2025-07-09 14:47:16,040 [http-nio-8084-exec-5] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":3,"pizzaId":[1]}
+2025-07-09 14:47:55,354 [http-nio-8084-exec-7] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":3,"pizzaId":[37,3,6,5,40]}
+2025-07-09 14:48:35,937 [http-nio-8084-exec-8] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":3,"pizzaId":[37,3,6,5,40,42]}
+2025-07-09 14:52:36,711 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:52:36,719 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 14:52:36,722 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 14:52:38,896 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:52:38,898 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 14:52:38,901 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 14:53:18,301 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 14:53:18,341 [main] INFO  c.p.client.ClientServiceApplication - Starting ClientServiceApplication using Java 23.0.1 with PID 12224 (C:\Users\user\IdeaProjects\pizzeria-microservices\client-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 14:53:18,342 [main] INFO  c.p.client.ClientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 14:53:18,965 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 14:53:19,029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-07-09 14:53:19,795 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-07-09 14:53:19,808 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-07-09 14:53:19,811 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 14:53:19,812 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 14:53:19,886 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 14:53:19,887 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1474 ms
+2025-07-09 14:53:20,065 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 14:53:20,150 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 14:53:20,198 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 14:53:20,520 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 14:53:20,554 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 14:53:20,780 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37ffe4f3
+2025-07-09 14:53:20,785 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 14:53:20,844 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 14:53:22,109 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 14:53:22,226 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:53:22,677 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 14:53:22,973 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-07-09 14:53:22,992 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2025-07-09 14:53:22,996 [main] INFO  c.p.client.ClientServiceApplication - Started ClientServiceApplication in 5.035 seconds (process running for 5.856)
+2025-07-09 14:53:23,463 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-07-09 14:53:23,497 [main] INFO  c.p.order.OrderServiceApplication - Starting OrderServiceApplication using Java 23.0.1 with PID 2084 (C:\Users\user\IdeaProjects\pizzeria-microservices\order-service\build\classes\java\main started by user in C:\Users\user\IdeaProjects\pizzeria-microservices)
+2025-07-09 14:53:23,498 [main] INFO  c.p.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-09 14:53:23,927 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-09 14:53:24,034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interface.
+2025-07-09 14:53:24,520 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2025-07-09 14:53:24,525 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2025-07-09 14:53:24,527 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-09 14:53:24,527 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-07-09 14:53:24,567 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-09 14:53:24,567 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1008 ms
+2025-07-09 14:53:24,677 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-09 14:53:24,719 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-07-09 14:53:24,747 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-09 14:53:24,930 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-09 14:53:24,952 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-09 14:53:25,076 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fc1abf
+2025-07-09 14:53:25,077 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-09 14:53:25,103 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-09 14:53:25,776 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-09 14:53:25,841 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 14:53:26,081 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-09 14:53:26,301 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2025-07-09 14:53:26,314 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path ''
+2025-07-09 14:53:26,318 [main] INFO  c.p.order.OrderServiceApplication - Started OrderServiceApplication in 3.165 seconds (process running for 3.876)
+2025-07-09 14:54:00,693 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 14:54:00,694 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 14:54:00,694 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-09 14:54:00,821 [http-nio-8082-exec-2] INFO  c.p.client.rest.ClientController - REQUEST: {"id":null,"name":"Семен","phone":"+7666666666"}
+2025-07-09 14:54:00,951 [http-nio-8082-exec-2] INFO  c.p.client.rest.ClientController - RESPONSE: {"id":11,"name":"Семен","phone":"+7666666666"}
+2025-07-09 14:56:13,062 [http-nio-8084-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-09 14:56:13,062 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-09 14:56:13,064 [http-nio-8084-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-09 14:56:13,158 [http-nio-8084-exec-2] INFO  c.p.order.rest.OrderController - REQUEST: {"clientId":3,"pizzaId":[37,3,6,5,40,42]}
+2025-07-09 15:04:24,372 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 15:04:24,375 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 15:04:24,377 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-09 15:04:26,575 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-09 15:04:26,577 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-09 15:04:26,579 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
