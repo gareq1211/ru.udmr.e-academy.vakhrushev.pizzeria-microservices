@@ -2,6 +2,7 @@ package com.pizzeria.shared.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.List;
 
 @Entity
 @Table(name = "orders", schema = "order_schema")
@@ -13,8 +14,8 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private Long clientId;
-    private Long pizzaId;
+    @ElementCollection
+    private List<Long> pizzaId;
     private String status;
 }

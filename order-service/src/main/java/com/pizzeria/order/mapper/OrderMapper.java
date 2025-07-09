@@ -6,15 +6,23 @@ import com.pizzeria.shared.dto.PizzaDto;
 import com.pizzeria.shared.entity.Order;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class OrderMapper {
 
-    public OrderDto toDto(Order order, PizzaDto pizza, ClientDto client) {
+    public OrderDto toDto(Order order, List<PizzaDto> pizzas, ClientDto client) {
+        List<String> pizzaNames = pizzas != null
+                ? pizzas.stream().map(PizzaDto::getName).toList()
+                : List.of("Неизвестная пицца");
+
         return new OrderDto(
                 order.getId(),
                 client != null ? client.getName() : "Неизвестный клиент",
-                pizza != null ? pizza.getName() : "Неизвестная пицца",
+                pizzaNames,
                 order.getStatus()
         );
     }
 }
+
+

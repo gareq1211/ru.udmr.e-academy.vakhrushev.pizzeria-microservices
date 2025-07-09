@@ -30,9 +30,12 @@ public class MenuController {
     }
 
     @GetMapping("/{id}")
-    public Pizza getById(@PathVariable Long id) {
-        return pizzaRepository.findById(id)
-                .orElseThrow(() -> new NoSuchElementException("Пицца с id=" + id + " не найдена"));
+    public List<Pizza> getById(@PathVariable List<Long> id) {
+        List<Pizza> pizzas = pizzaRepository.findAllById(id);
+        if (pizzas.isEmpty()) {
+            throw new NoSuchElementException("Пиццы с указанными ID не найдены");
+        }
+        return pizzas;
     }
     @PutMapping("/{id}")
     public Pizza update(@PathVariable Long id, @RequestBody @Valid Pizza updatedPizza) {
